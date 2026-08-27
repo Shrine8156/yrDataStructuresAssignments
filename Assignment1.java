@@ -39,7 +39,11 @@ if (average >= 70) {
 } else {
     System.out.println(student.name + " is not passing.");
 }
-    scanner.close();
+
+testRuntime();
+
+scanner.close();
+
 }
 public static double calculateAverage(double[] grades) {
 
@@ -60,4 +64,32 @@ public static void displayGrades(double[] grades) {
         System.out.println(grades[i]);
     }
 }
+
+public static void testRuntime() {
+
+    double[] smallArray = new double[1000];
+    double[] largeArray = new double[100000];
+
+    for (int i = 0; i < smallArray.length; i++) {
+        smallArray[i] = 80;
+    }
+
+    for (int i = 0; i < largeArray.length; i++) {
+        largeArray[i] = 80;
+    }
+
+    long startSmall = System.nanoTime();
+    calculateAverage(smallArray);
+    long endSmall = System.nanoTime();
+
+    long startLarge = System.nanoTime();
+    calculateAverage(largeArray);
+    long endLarge = System.nanoTime();
+
+    System.out.println();
+    System.out.println("Runtime Test");
+    System.out.println("Small array: " + (endSmall - startSmall) + " nanoseconds");
+    System.out.println("Large array: " + (endLarge - startLarge) + " nanoseconds");
+}
+
 }
