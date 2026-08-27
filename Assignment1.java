@@ -32,9 +32,13 @@ public static void main(String[] args) {
     displayGrades(grades);
 
 double average = calculateAverage(grades);
-
 System.out.println("Average: " + average);
 
+if (average >= 70) {
+    System.out.println(student.name + " is passing.");
+} else {
+    System.out.println(student.name + " is not passing.");
+}
     scanner.close();
 }
 public static double calculateAverage(double[] grades) {
