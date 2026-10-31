@@ -1,0 +1,7 @@
+{
+  "name": "Ada Lovelace",
+  "born": 1815,
+  "birthplace": { "city": "London", "country": "England" },
+  "writings": ["Analytical Engine notes", "Poetical Science"],
+  "spouse": null
+}

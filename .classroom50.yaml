@@ -1,0 +1,13 @@
+schema: "classroom50/repo-config/v1"
+classroom: "cpsc-2108-fall-2026"
+assignment: "json-parser"
+secret: "8eqhc8s4"
+owner:
+  username: "Shrine8156"
+  id: 244755511
+  accepted_at: "2026-10-31T00:09:21Z"
+source:
+  owner: "CPSC2108-Fall2026"
+  owner_id: 324058310
+  repo: "JsonParser"
+  branch: "main"
